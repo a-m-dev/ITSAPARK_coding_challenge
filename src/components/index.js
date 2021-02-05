@@ -9,3 +9,4 @@ export { default as Footer } from "./Footer";
 export { default as Form } from "./Form";
 export { default as InputField } from "./InputField";
 export { default as NumsRangeForm } from "./NumsRangeForm";
+export { default as ResultBox } from "./ResultBox";

@@ -46,3 +46,11 @@ code {
   background-color: rgba($secondary-color, 0.7);
   border-radius: $global-border-radius / 2;
 }
+
+hr {
+  max-width: 480px;
+  border: 0;
+  height: 1px;
+  margin: $spacing-xl auto;
+  background-image: linear-gradient(to right, $gray-200, $gray-500, $gray-200);
+}

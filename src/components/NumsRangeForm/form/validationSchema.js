@@ -7,15 +7,15 @@ const validationSchema = Yup.object().shape({
     .typeError("You must specify a number")
     .integer("Number should be integer")
     .positive("Number should be positive value")
-    .required("This field is required"),
+    .required("Start number is required"),
   stopNum: Yup.number()
     .min(0, "Min value is 0")
     .nullable()
     .typeError("You must specify a number")
     .integer("Number should be integer")
     .positive("Number should be positive value")
-    .moreThan(Yup.ref("startNum"), "second field must be more than first field")
-    .required("This field is required"),
+    .moreThan(Yup.ref("startNum"), "Stop number must be more than start number")
+    .required("Stop number is required"),
 });
 
 export default validationSchema;
