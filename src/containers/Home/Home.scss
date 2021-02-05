@@ -2,5 +2,37 @@
 @import "../../globalStyles/mixins.scss";
 
 .home {
-  background-color: $secondary-color;
+  position: relative;
+  height: calc(100vh - 200px);
+
+  &__desc {
+    position: relative;
+    text-align: center;
+    padding: 0 $spacing-xxl;
+    padding-top: $spacing-xxl * 3;
+    @include makeFlex(center, center, column);
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $gray-800;
+      margin-bottom: $spacing-sm;
+    }
+
+    & h3 {
+      margin-bottom: $spacing-xl;
+    }
+
+    & p {
+      text-align: left;
+      margin-bottom: $spacing-xl;
+    }
+
+    & ol li {
+      text-align: left;
+      margin-bottom: $spacing-sm;
+      color: $gray-500;
+      line-height: 1.2;
+    }
+  }
 }
