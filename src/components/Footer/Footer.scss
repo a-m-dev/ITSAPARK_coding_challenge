@@ -1,0 +1,26 @@
+@import "../../globalStyles/variables.scss";
+@import "../../globalStyles/mixins.scss";
+
+.footer {
+  width: 100% !important;
+  max-width: unset;
+  padding: $spacing-sm;
+  bottom: 0;
+  position: fixed;
+  min-height: 85px;
+  pointer-events: none;
+  background-image: linear-gradient(
+    0deg,
+    rgba($secondary-color, 0.3) 0%,
+    transparent 100%
+  );
+  @include makeUnselectable();
+  @include makeFlex(center, flex-end);
+
+  &__copy {
+    font-size: $secondary-font-size;
+    color: $secondary-color;
+    text-align: center;
+    margin-bottom: $spacing-sm;
+  }
+}

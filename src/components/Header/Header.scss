@@ -1,0 +1,61 @@
+@import "../../globalStyles/variables.scss";
+@import "../../globalStyles/mixins.scss";
+
+.header {
+  height: 200px;
+  position: relative;
+  @include makeFlex(center, center, column);
+
+  &__logo {
+    width: 400px;
+    margin-bottom: $spacing-sm;
+
+    & img {
+      opacity: 0.85;
+    }
+  }
+
+  &__menu {
+    position: relative;
+    height: 54px;
+    min-width: 480px;
+    border-top: 1px solid rgba($secondary-color, 0.1);
+
+    &--active {
+      opacity: 1 !important;
+      color: darken($secondary-color, 25%) !important;
+      background-color: lighten($secondary-color, 10%) !important;
+    }
+
+    & ul {
+      width: 100%;
+      height: inherit;
+      list-style-type: none;
+      @include makeFlex(center, center);
+
+      & li {
+        min-width: 120px;
+        height: 34px;
+        margin: 0 $spacing-md;
+        @include makeFlex(center, center);
+      }
+    }
+
+    & a {
+      height: 100%;
+      width: fit-content;
+      opacity: 0.4;
+      text-align: center;
+      color: $secondary-color;
+      padding: $spacing-sm $spacing-md;
+      background-color: transparent;
+      border-radius: $global-border-radius;
+      @include makeTransition(0.3s, ease-in-out);
+
+      &:hover {
+        opacity: 1;
+        background-color: rgba($color: $secondary-color, $alpha: 0.1);
+      }
+    }
+  }
+}
