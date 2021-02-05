@@ -13,6 +13,9 @@
       font-size: $primary-font-size * 1.5;
       margin-bottom: $spacing-sm;
       text-align: center;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
     }
 
     & h4 {

@@ -35,10 +35,9 @@ const MidLevelWayManager = () => {
 
       const t2 = performance.now();
 
-      // setCount(result);
       setTimeItTakes((t2 - t1) / 1000);
     },
-    [setCount, setTimeItTakes, workerInstance, setLoading]
+    [setTimeItTakes, workerInstance, setLoading]
   );
 
   return {

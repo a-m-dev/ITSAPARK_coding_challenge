@@ -12,7 +12,7 @@ const MidLevelWay = () => {
     <article className="container mid-level-way">
       <section className="mid-level-way__container">
         <h1>Insert Your Range:</h1>
-        <h4>I will handle it Mid Level way:</h4>
+        <h4>Implemented brute-force way with web worker:</h4>
         <NumsRangeForm submitFormHandler={handleSubmitForm} />
         {data.loading ? <Loading /> : <ResultBox {...data} />}
       </section>

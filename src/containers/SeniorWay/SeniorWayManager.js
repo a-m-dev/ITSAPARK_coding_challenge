@@ -11,10 +11,10 @@ const SeniorWayManager = () => {
       console.log("[STEP 1]: INITIALIZING");
       const t1 = performance.now();
 
-      let result = 0;
+      let result = 0n;
 
-      let countBeforeStart = findMultipantsCount(parseInt(startNum) - 1, 3);
-      let countBeforeStop = findMultipantsCount(parseInt(stopNum), 3);
+      let countBeforeStart = findMultipantsCount(BigInt(startNum) - 1n, 3n);
+      let countBeforeStop = findMultipantsCount(BigInt(stopNum), 3n);
 
       result = countBeforeStop - countBeforeStart;
 
@@ -28,7 +28,7 @@ const SeniorWayManager = () => {
   );
 
   const findMultipantsCount = (x, n) => {
-    return Math.floor(x / n);
+    return x / n;
   };
 
   return {

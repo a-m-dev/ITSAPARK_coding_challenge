@@ -8,12 +8,15 @@
   margin-top: $spacing-xl;
   position: relative;
   padding: $spacing-xl;
+  margin-bottom: $spacing-xxl * 3;
   @include makeFlex(center, center, column);
 
   & h1 {
     font-size: $primary-font-size * 3;
     margin: 0;
     margin-bottom: $spacing-sm;
+    max-width: 480px;
+    overflow-wrap: break-word;
   }
 
   & span {
