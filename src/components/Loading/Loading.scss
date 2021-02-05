@@ -3,17 +3,22 @@
 
 .loading-container {
   width: 100%;
-  height: 175px;
+  height: 250px;
   top: 0;
   position: relative;
-  @include makeFlex(center, center);
+  @include makeFlex(center, center, column);
 }
-
+.desc {
+  color: $gray-500;
+  max-width: 400px;
+  text-align: center;
+}
 .loading {
   display: inline-block;
   position: relative;
   width: 80px;
   height: fit-content;
+  margin-bottom: $spacing-xxl;
 }
 .loading div {
   position: absolute;

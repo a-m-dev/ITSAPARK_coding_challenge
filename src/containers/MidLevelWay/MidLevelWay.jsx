@@ -1,9 +1,10 @@
-import { NumsRangeForm } from "../../components";
+import { NumsRangeForm, ResultBox, Loading } from "../../components";
 import MidLevelWayManager from "./MidLevelWayManager";
 import "./MidLevelWay.scss";
 
 const MidLevelWay = () => {
   const {
+    data,
     actions: { handleSubmitForm },
   } = MidLevelWayManager();
 
@@ -13,6 +14,7 @@ const MidLevelWay = () => {
         <h1>Insert Your Range:</h1>
         <h4>I will handle it Mid Level way:</h4>
         <NumsRangeForm submitFormHandler={handleSubmitForm} />
+        {data.loading ? <Loading /> : <ResultBox {...data} />}
       </section>
     </article>
   );

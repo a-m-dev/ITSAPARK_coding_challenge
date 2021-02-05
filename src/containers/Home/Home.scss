@@ -11,7 +11,7 @@
     max-width: 458px;
     margin: 0 auto;
     padding: 0 $spacing-xxl;
-    padding-top: $spacing-xxl * 3;
+    padding-top: $spacing-xxl;
     @include makeFlex(center, center, column);
 
     & h1 {
