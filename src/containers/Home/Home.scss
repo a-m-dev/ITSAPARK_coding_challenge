@@ -8,6 +8,8 @@
   &__desc {
     position: relative;
     text-align: center;
+    max-width: 458px;
+    margin: 0 auto;
     padding: 0 $spacing-xxl;
     padding-top: $spacing-xxl * 3;
     @include makeFlex(center, center, column);
@@ -32,7 +34,7 @@
       text-align: left;
       margin-bottom: $spacing-sm;
       color: $gray-500;
-      line-height: 1.2;
+      line-height: 1.4;
     }
   }
 }

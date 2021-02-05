@@ -12,12 +12,17 @@ const Home = () => {
         </p>
 
         <ol>
-          <li> First way is a simple modulo kind of O(n) solution.</li>
+          <li>
+            First way is a simple modulo kind of checking number in an O(n)
+            solution. It is not performant, and you might get your chrome tab
+            crashed for large entries like 10 bilion.
+          </li>
           <li>
             In second solution I am using worker to handle the computation and
-            considering the large amount of input.
+            considering the large amount of input. I can say that it's a bit
+            more performant.
           </li>
-          <li>Third way is the algorithmic way.</li>
+          <li>Third way is the mathmatical thinking way.</li>
         </ol>
       </section>
     </article>
