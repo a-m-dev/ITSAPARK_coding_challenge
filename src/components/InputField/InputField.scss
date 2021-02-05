@@ -26,6 +26,8 @@
     padding: 0 $spacing-lg;
     margin-top: $spacing-sm;
     border: 0px;
+    font-weight: bold;
+    font-size: $primary-font-size;
     border-radius: $global-border-radius;
     @extend .focusable;
 

@@ -4,7 +4,7 @@
 .focusable {
   outline: 0;
   box-shadow: 0 0 0 0 rgba($secondary-color, 0);
-  @include makeTransition(0.3s, ease-in-out);
+  @include makeTransition(0.2s, ease-in-out, box-shadow);
 
   &:focus {
     box-shadow: 0 0 0 4px rgba($secondary-color, 0.2);
