@@ -3,5 +3,9 @@
 
 .junior-way {
   position: relative;
-  background-color: red;
+  height: calc(100vh - 200px);
+
+  &__container {
+    padding-top: $spacing-xxl * 3;
+  }
 }

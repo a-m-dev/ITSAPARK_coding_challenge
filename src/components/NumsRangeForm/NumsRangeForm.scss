@@ -1,0 +1,29 @@
+@import "../../globalStyles/variables.scss";
+@import "../../globalStyles/mixins.scss";
+@import "../../globalStyles/extendables.scss";
+
+.nums-range-form {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  @include makeFlex(center, center, column);
+
+  & form {
+    width: 100%;
+  }
+
+  & button {
+    all: unset;
+    width: 100%;
+    min-height: 48px;
+    background-color: $secondary-color;
+    border-radius: $global-border-radius;
+    text-align: center;
+    font-size: $primary-font-size;
+    font-weight: bold;
+    color: darken($color: $secondary-color, $amount: 40%);
+    @extend .focusable;
+    @include makeTransition(0.3s, ease-in-out);
+  }
+}

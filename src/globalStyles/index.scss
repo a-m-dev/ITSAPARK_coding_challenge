@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./mixins";
 @import "./layout";
+@import "./extendables";
 
 * {
   margin: 0;
@@ -27,6 +28,9 @@ a {
   text-decoration: none;
   display: inline-block;
   height: fit-content;
+  border-radius: $global-border-radius;
+  @extend .focusable;
+  @include makeTransition(0.3s, ease-in-out);
 }
 
 p {
