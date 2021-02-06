@@ -1,11 +1,11 @@
 @import "../../globalStyles/variables.scss";
 @import "../../globalStyles/mixins.scss";
 
-.junior-way {
+.worker-solution {
   position: relative;
 
   &__container {
-    padding-top: $spacing-xxl;
+    padding-top: $spacing-md;
 
     & h1,
     h4 {

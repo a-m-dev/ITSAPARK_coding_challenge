@@ -1,16 +1,16 @@
 import { NumsRangeForm, ResultBox } from "../../components";
-import SeniorWayManager from "./SeniorWayManager";
-import "./SeniorWay.scss";
+import AdvanceSolutionManager from "./AdvanceSolutionManager";
+import "./AdvanceSolution.scss";
 
-const SeniorWay = () => {
+const AdvanceSolution = () => {
   const {
     data,
     actions: { handleSubmitForm },
-  } = SeniorWayManager();
+  } = AdvanceSolutionManager();
 
   return (
-    <article className="container senior-way">
-      <section className="senior-way__container">
+    <article className="container advance-solution">
+      <section className="advance-solution__container">
         <h1>Insert Your Range:</h1>
         <h4>
           I had handled it with a mathematical trick and since the result could
@@ -23,4 +23,4 @@ const SeniorWay = () => {
   );
 };
 
-export default SeniorWay;
+export default AdvanceSolution;

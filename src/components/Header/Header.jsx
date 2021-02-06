@@ -7,9 +7,9 @@ import "./Header.scss";
 const Header = () => {
   const getMenuData = useMemo(() => {
     return [
-      { id: 0, to: PublicRoutes.JuniorWay, label: "Junior way" },
-      { id: 1, to: PublicRoutes.MidLevelWay, label: "MidLevel way" },
-      { id: 2, to: PublicRoutes.SeniorWay, label: "Senior way" },
+      { id: 0, to: PublicRoutes.BruteForceWay, label: "Brute-Force" },
+      { id: 1, to: PublicRoutes.WorkerWay, label: "Web Worker" },
+      { id: 2, to: PublicRoutes.AdvanceWay, label: "Advance" },
     ];
   }, []);
 

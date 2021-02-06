@@ -1,16 +1,16 @@
 import { NumsRangeForm, ResultBox } from "../../components";
-import JuniorWayManager from "./JuniorWayManager";
-import "./JuniorWay.scss";
+import BruteForceSolutionManager from "./BruteForceSolutionManager";
+import "./BruteForceSolution.scss";
 
-const JuniorWay = () => {
+const BruteForceSolution = () => {
   const {
     data,
     actions: { handleSubmitForm },
-  } = JuniorWayManager();
+  } = BruteForceSolutionManager();
 
   return (
-    <article className="container junior-way">
-      <section className="junior-way__container">
+    <article className="container brute-force-solution">
+      <section className="brute-force-solution__container">
         <h1>Insert Your Range:</h1>
         <h4>I will handle it with an O(n) brute-force solution:</h4>
         <NumsRangeForm submitFormHandler={handleSubmitForm} />
@@ -20,4 +20,4 @@ const JuniorWay = () => {
   );
 };
 
-export default JuniorWay;
+export default BruteForceSolution;

@@ -1,20 +1,21 @@
 import { useState, useCallback } from "react";
 
-const JuniorWayManager = () => {
+const AdvanceSolutionManager = () => {
   const [timeItTakes, setTimeItTakes] = useState(0);
   const [count, setCount] = useState(null);
 
   // handlers
   const handleSubmitForm = useCallback(
     ({ startNum, stopNum }) => {
-      console.log(">>> SUBMITTING FORM JUNIOR", { startNum, stopNum });
+      console.log(">>> ADVANCE", { startNum, stopNum });
       const t1 = performance.now();
 
-      let result = 0;
+      let result = 0n;
 
-      for (let n = parseInt(startNum); n <= parseInt(stopNum); n++) {
-        if (n % 3 === 0) result += 1;
-      }
+      let countBeforeStart = findMultipantsCount(BigInt(startNum) - 1n, 3n);
+      let countBeforeStop = findMultipantsCount(BigInt(stopNum), 3n);
+
+      result = countBeforeStop - countBeforeStart;
 
       const t2 = performance.now();
 
@@ -24,10 +25,14 @@ const JuniorWayManager = () => {
     [setCount, setTimeItTakes]
   );
 
+  const findMultipantsCount = (x, n) => {
+    return x / n;
+  };
+
   return {
     data: { count, timeItTakes },
     actions: { handleSubmitForm },
   };
 };
 
-export default JuniorWayManager;
+export default AdvanceSolutionManager;

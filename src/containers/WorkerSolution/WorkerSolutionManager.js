@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 
 import worker from "workerize-loader!../../../src/workers/computeNum"; // eslint-disable-line import/no-webpack-loader-syntax
 
-const MidLevelWayManager = () => {
+const WorkerSolutionManager = () => {
   const [timeItTakes, setTimeItTakes] = useState(0);
   const [count, setCount] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -14,30 +14,26 @@ const MidLevelWayManager = () => {
     workerInstance.addEventListener("message", (evt) => {
       if (evt.data?.result) {
         setCount(evt.data.result);
+        setTimeItTakes(evt.data.totalTime);
         setLoading(false);
       }
     });
-  }, [setCount, workerInstance, setLoading]);
+  }, [setCount, workerInstance, setTimeItTakes, setLoading]);
 
   // handlers
   const handleSubmitForm = useCallback(
     ({ startNum, stopNum }) => {
-      console.log(">>> SUBMITTING FORM JUNIOR", { startNum, stopNum });
+      console.log(">>> WORKER", { startNum, stopNum });
 
       setLoading(true);
-      const t1 = performance.now();
 
       workerInstance.calculateTheRange({
         startNum: parseInt(startNum),
         stopNum: parseInt(stopNum),
         target: 3,
       });
-
-      const t2 = performance.now();
-
-      setTimeItTakes((t2 - t1) / 1000);
     },
-    [setTimeItTakes, workerInstance, setLoading]
+    [workerInstance, setLoading]
   );
 
   return {
@@ -46,4 +42,4 @@ const MidLevelWayManager = () => {
   };
 };
 
-export default MidLevelWayManager;
+export default WorkerSolutionManager;

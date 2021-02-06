@@ -21,6 +21,7 @@
     height: 54px;
     min-width: 458px;
     border-top: 1px solid rgba($secondary-color, 0.1);
+    padding-top: $spacing-sm;
 
     &--active {
       opacity: 1 !important;

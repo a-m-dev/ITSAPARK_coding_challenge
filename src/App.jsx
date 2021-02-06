@@ -1,6 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 import { Header, Footer } from "./components";
-import { Home, JuniorWay, MidLevelWay, SeniorWay } from "./containers";
+import {
+  Home,
+  BruteForceSolution,
+  WorkerSolution,
+  AdvanceSolution,
+} from "./containers";
 import PublicRoutes from "./utils/PublicRoutes";
 
 function App() {
@@ -10,9 +15,12 @@ function App() {
       <main>
         <Switch>
           <Route exact path={PublicRoutes.Home} component={Home} />
-          <Route path={PublicRoutes.JuniorWay} component={JuniorWay} />
-          <Route path={PublicRoutes.MidLevelWay} component={MidLevelWay} />
-          <Route path={PublicRoutes.SeniorWay} component={SeniorWay} />
+          <Route
+            path={PublicRoutes.BruteForceWay}
+            component={BruteForceSolution}
+          />
+          <Route path={PublicRoutes.WorkerWay} component={WorkerSolution} />
+          <Route path={PublicRoutes.AdvanceWay} component={AdvanceSolution} />
         </Switch>
       </main>
       <Footer />

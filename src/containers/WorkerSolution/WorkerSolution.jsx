@@ -1,16 +1,16 @@
 import { NumsRangeForm, ResultBox, Loading } from "../../components";
-import MidLevelWayManager from "./MidLevelWayManager";
-import "./MidLevelWay.scss";
+import WorkerSolutionManager from "./WorkerSolutionManager";
+import "./WorkerSolution.scss";
 
-const MidLevelWay = () => {
+const WorkerSolution = () => {
   const {
     data,
     actions: { handleSubmitForm },
-  } = MidLevelWayManager();
+  } = WorkerSolutionManager();
 
   return (
-    <article className="container mid-level-way">
-      <section className="mid-level-way__container">
+    <article className="container worker-solution">
+      <section className="worker-solution__container">
         <h1>Insert Your Range:</h1>
         <h4>Implemented brute-force way with web worker:</h4>
         <NumsRangeForm submitFormHandler={handleSubmitForm} />
@@ -20,4 +20,4 @@ const MidLevelWay = () => {
   );
 };
 
-export default MidLevelWay;
+export default WorkerSolution;

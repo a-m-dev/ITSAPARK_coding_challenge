@@ -1,8 +1,8 @@
 const PublicRoutes = {
   Home: "/",
-  JuniorWay: "/junior-way",
-  MidLevelWay: "/mid-level-way",
-  SeniorWay: "/senior-way",
+  BruteForceWay: "/brute-force-way",
+  WorkerWay: "/worker-way",
+  AdvanceWay: "/advance-way",
 };
 
 export default PublicRoutes;
