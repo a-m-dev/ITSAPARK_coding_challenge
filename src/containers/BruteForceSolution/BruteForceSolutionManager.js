@@ -7,7 +7,6 @@ const BruteForceSolutionManager = () => {
   // handlers
   const handleSubmitForm = useCallback(
     ({ startNum, stopNum }) => {
-      console.log(">>> BRUTE-FORCE", { startNum, stopNum });
       const t1 = performance.now();
 
       let result = 0;

@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BruteForceSolution /> expect to matches with snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <article
+        class="container brute-force-solution"
+      >
+        <section
+          class="brute-force-solution__container"
+        >
+          <h1>
+            Insert Your Range:
+          </h1>
+          <h4>
+            I will handle it with an O(n) brute-force solution:
+          </h4>
+          <section
+            class="nums-range-form"
+          >
+            <form
+              action="#"
+            >
+              <fieldset
+                class="input-field"
+              >
+                <span
+                  class="input-field__label"
+                >
+                  Start Number
+                </span>
+                <input
+                  autocomplete="off"
+                  class="input-field__input"
+                  data-testid="startNumber"
+                  name="startNum"
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+              </fieldset>
+              <fieldset
+                class="input-field"
+              >
+                <span
+                  class="input-field__label"
+                >
+                  Stop Number
+                </span>
+                <input
+                  autocomplete="off"
+                  class="input-field__input"
+                  data-testid="stopNumber"
+                  name="stopNum"
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+              </fieldset>
+              <button
+                data-testid="submitButton"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </section>
+          <hr />
+          <section
+            class="result-box"
+          >
+            <h1
+              data-testid="resultCount"
+            >
+              0
+            </h1>
+            <span>
+              Items found in given range!
+            </span>
+            <span>
+              in 
+              <strong
+                data-testid="timeTook"
+              >
+                0
+              </strong>
+               sec
+            </span>
+          </section>
+        </section>
+      </article>
+    </div>
+  </body>,
+  "container": <div>
+    <article
+      class="container brute-force-solution"
+    >
+      <section
+        class="brute-force-solution__container"
+      >
+        <h1>
+          Insert Your Range:
+        </h1>
+        <h4>
+          I will handle it with an O(n) brute-force solution:
+        </h4>
+        <section
+          class="nums-range-form"
+        >
+          <form
+            action="#"
+          >
+            <fieldset
+              class="input-field"
+            >
+              <span
+                class="input-field__label"
+              >
+                Start Number
+              </span>
+              <input
+                autocomplete="off"
+                class="input-field__input"
+                data-testid="startNumber"
+                name="startNum"
+                placeholder=""
+                type="text"
+                value=""
+              />
+            </fieldset>
+            <fieldset
+              class="input-field"
+            >
+              <span
+                class="input-field__label"
+              >
+                Stop Number
+              </span>
+              <input
+                autocomplete="off"
+                class="input-field__input"
+                data-testid="stopNumber"
+                name="stopNum"
+                placeholder=""
+                type="text"
+                value=""
+              />
+            </fieldset>
+            <button
+              data-testid="submitButton"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+        <hr />
+        <section
+          class="result-box"
+        >
+          <h1
+            data-testid="resultCount"
+          >
+            0
+          </h1>
+          <span>
+            Items found in given range!
+          </span>
+          <span>
+            in 
+            <strong
+              data-testid="timeTook"
+            >
+              0
+            </strong>
+             sec
+          </span>
+        </section>
+      </section>
+    </article>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

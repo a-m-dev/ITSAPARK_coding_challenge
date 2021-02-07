@@ -7,7 +7,6 @@ const AdvanceSolutionManager = () => {
   // handlers
   const handleSubmitForm = useCallback(
     ({ startNum, stopNum }) => {
-      console.log(">>> ADVANCE", { startNum, stopNum });
       const t1 = performance.now();
 
       let result = 0n;
